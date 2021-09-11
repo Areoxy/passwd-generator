@@ -1,1 +1,0 @@
-from passwd_generator import passwd
