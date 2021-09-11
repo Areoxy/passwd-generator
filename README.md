@@ -41,3 +41,14 @@ print(password)
 ```
 
 The 10 means the length of the password. You can change this freely
+
+
+Hash a Passwort
+
+```py
+from passwd_generator import passwd
+
+generator = passwd() # Define the passwd generator
+hashed_password = generator.hash_passwd("yourpassword") # Hash the password
+print(hashed_password)
+```
