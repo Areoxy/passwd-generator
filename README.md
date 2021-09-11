@@ -85,3 +85,5 @@ generator = passwd() # Define the passwd generator
 hashed_password = generator.check_passwd(3, "yourpasswort") # Checks the password
 print(hashed_password)
 ```
+
+Note that thcheck returns true if the password contains the requirements and false if ot.
