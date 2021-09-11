@@ -8,8 +8,8 @@ setup(
   description = 'passwd_generator is a easy way to generate passwords, hash passwords and check passwords.',   
   author = 'Areo',                   
   author_email = 'areo@envyre.de',      
-  url = 'https://github.com/user/reponame',  
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    
+  url = 'https://github.com/Envyre-Development/passwd-generator',  
+  download_url = 'https://github.com/Envyre-Development/passwd-generator/archive/refs/tags/Python.tar.gz',    
   keywords = ['Generator', 'Password', 'passwd_generator'],   
   classifiers=[
     'Development Status :: 4 - Beta',      
