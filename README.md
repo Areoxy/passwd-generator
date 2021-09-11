@@ -2,7 +2,7 @@
 
 Passwd_generator is an easy way to generate, hash and check passwords.
 
-**Documentation**
+## Documentation
 
 Install the Package with 
 
@@ -10,7 +10,7 @@ Install the Package with
 or install the Development Version with 
 `pip install git+`
 
-Generate a password from numbers and special characters.
+**Generate a password from numbers and special characters.**
 
 ```py
 from passwd_generator import passwd
@@ -20,7 +20,7 @@ password = generator.make_passwd(10, "char") # Generate the password
 print(password)
 ```
 
-Generate a password from numbers.
+**Generate a password from numbers.**
 
 ```py
 from passwd_generator import passwd
@@ -30,7 +30,7 @@ password = generator.make_passwd(10, "num") # Generate the password
 print(password)
 ```
 
-Generate a password from numbers, letters and special charakters.
+**Generate a password from numbers, letters and special charakters.**
 
 ```py
 from passwd_generator import passwd
@@ -43,7 +43,7 @@ print(password)
 The 10 means the length of the password. You can change this freely
 
 
-Hash a Passwort
+**Hash a Passwort**
 
 ```py
 from passwd_generator import passwd
