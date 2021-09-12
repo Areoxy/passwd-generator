@@ -12,7 +12,7 @@ or install the Development Version with
 
 **Generate a password from numbers and special characters.**
 
-```py
+```python
 from passwd_generator.functions import passwd
 
 generator = passwd()
@@ -22,7 +22,7 @@ print(password)
 
 **Generate a password from numbers.**
 
-```py
+```python
 from passwd_generator.functions import passwd
 
 generator = passwd() # Define the passwd generator
@@ -32,7 +32,7 @@ print(password)
 
 **Generate a password from numbers, letters and special charakters.**
 
-```py
+```python
 from passwd_generator.functions import passwd
 
 generator = passwd() # Define the passwd generator
@@ -45,7 +45,7 @@ The 10 means the length of the password. You can change this freely
 
 **Hash a Passwort**
 
-```py
+```python
 from passwd_generator.functions import passwd
 
 generator = passwd() # Define the passwd generator
@@ -55,7 +55,7 @@ print(hashed_password)
 
 **Check if a password contains numbers.**
 
-```py
+```python
 from passwd_generator.functions import passwd
 
 
@@ -66,7 +66,7 @@ print(hashed_password)
 
 **Check if a password contains letters.**
 
-```py
+```python
 from passwd_generator.functions import passwd
 
 
@@ -77,7 +77,7 @@ print(hashed_password)
 
 **Check if a password contains numbers and letters.**
 
-```py
+```python
 from passwd_generator.functions import passwd
 
 
