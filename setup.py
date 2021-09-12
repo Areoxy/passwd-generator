@@ -1,4 +1,12 @@
 from distutils.core import setup
+import re
+from codecs import open
+from os import path, environ
+
+
+with open("README.md", "r", encoding="utf-8") as f:
+    README = f.read()
+
 
 setup(
   name = 'passwd-generator',         
@@ -11,6 +19,8 @@ setup(
   url = 'https://github.com/Envyre-Development/passwd-generator',  
   download_url = 'https://github.com/Envyre-Development/passwd-generator/archive/refs/tags/passwd-generator.tar.gz',    
   keywords = ['Generator', 'Password', 'passwd_generator'],   
+  long_description=README,
+  long_description_content_type='text/markdown',
   classifiers=[
     'Development Status :: 4 - Beta',      
     'Intended Audience :: Developers',      
@@ -24,6 +34,4 @@ setup(
     'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.9',
   ],
-  long_description=long_description,
-  long_description_content_type='text/markdown',
 )
