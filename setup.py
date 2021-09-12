@@ -3,12 +3,6 @@ import re
 from codecs import open
 from os import path, environ
 
-try:
-    import pypandoc
-    long_description = pypandoc.convert('README.md', 'rst')
-except(IOError, ImportError):
-    long_description = open('README.md').read()
-
 
 setup(
   name = 'passwd-generator',         
