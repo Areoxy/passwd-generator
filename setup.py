@@ -17,7 +17,7 @@ setup(
   author = 'Areo',                   
   author_email = 'areo@envyre.de',      
   url = 'https://github.com/Envyre-Development/passwd-generator',  
-  download_url = 'https://github.com/Envyre-Development/passwd-generator/archive/refs/tags/passwd-generator.tar.gz',    
+  download_url = 'https://github.com/Envyre-Development/passwd-generator/archive/refs/tags/passwd.tar.gz',    
   keywords = ['Generator', 'Password', 'passwd_generator'],   
   long_description=README,
   long_description_content_type='text/markdown',
