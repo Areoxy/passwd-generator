@@ -5,9 +5,9 @@ from os import path, environ
 
 
 setup(
-  name = 'passwd-generator',         
-  packages = ['passwd-generator'], 
-  version = '0.1',     
+  name = 'passwd_generator',         
+  packages = ['passwd_generator'], 
+  version = '0.2',     
   license='MIT',        
   description = 'passwd_generator is a easy way to generate passwords, hash passwords and check passwords.',   
   author = 'Areo',                   
