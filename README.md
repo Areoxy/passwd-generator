@@ -1,6 +1,6 @@
 # passwd-generator
 
-Passwd_generator is an easy way to generate, hash and check passwords.
+passwd-generator is a python package to generate, hash, and check passwords in many different formats like only text or text&numbers.
 
 ## Documentation
 
