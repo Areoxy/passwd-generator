@@ -1,3 +1,5 @@
+[![Downloads](https://static.pepy.tech/badge/passwd-generator)](https://pepy.tech/project/passwd-generator) [![Downloads](https://static.pepy.tech/badge/passwd-generator/month)](https://pepy.tech/project/passwd-generator)
+
 # passwd-generator
 
 passwd-generator is a python package to generate, hash, and check passwords in many different formats like only text or text&numbers.
