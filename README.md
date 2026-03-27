@@ -2,7 +2,7 @@
 
 # passwd-generator
 
-passwd-generator is a python package to generate, hash, and check passwords in many different formats like only text or text&numbers.
+passwd-generator is a simple Python library to generate, hash, and verify secure passwords with modern crack time analysis.
 
 ## Documentation
 
@@ -12,80 +12,49 @@ Install the Package with
 or install the Development Version with 
 `pip install git+`
 
-**Generate a password from numbers and special characters.**
+### **Generate a password**
 
 ```python
-from passwd_generator.functions import passwd
+from passwd_generator import passwd
 
-generator = passwd()
-password = generator.make_passwd(10, "char") # Generates the password 
-print(password)
+# available types: 'char' (letters+symbols), 'num' (numbers only), 'nchar' (all chars)
+password = passwd().generate_passwd(length=12, type="nchar")
 ```
 
-**Generate a password from numbers.**
+### **Validate a password**
 
 ```python
-from passwd_generator.functions import passwd
+from passwd_generator import passwd
 
-generator = passwd() # Define the passwd generator
-password = generator.make_passwd(10, "num") # Generates the password
-print(password)
+print(passwd().validate_passwd(password="text", min_length=4))
 ```
 
-**Generate a password from numbers, letters and special charakters.**
+Example Ouput:
+```commandline
+{
+    'valid': True,
+    'length': 11,
+    'score': 4,
+    'cracktime' 24y
+    'requirements': {
+        'digits': True,
+        'upper': True,
+        'lower': True,
+        'special': True
+    }
+}
+```
 
+### **Hash a password/text**
 ```python
-from passwd_generator.functions import passwd
+from passwd_generator import passwd
 
-generator = passwd() # Define the passwd generator
-password = generator.make_passwd(10, "nchar") # Generates the password
-print(password)
+password_hash = passwd().hash_passwd("text")
 ```
 
-> The 10 means the length of the password. You can change this freely
-
-
-**Hash a Passwort**
-
+### **Verify a hash**
 ```python
-from passwd_generator.functions import passwd
+from passwd_generator import passwd
 
-generator = passwd() # Define the passwd generator
-hashed_password = generator.hash_passwd("yourpassword") # Hashs the password
-print(hashed_password)
+password_hash = passwd().verify_hash("new_hash", "old_hash")
 ```
-
-**Check if a password contains numbers.**
-
-```python
-from passwd_generator.functions import passwd
-
-
-generator = passwd() # Define the passwd generator
-hashed_password = generator.check_passwd(1, "yourpasswort") # Checks the password
-print(hashed_password)
-```
-
-**Check if a password contains letters.**
-
-```python
-from passwd_generator.functions import passwd
-
-
-generator = passwd() # Define the passwd generator
-hashed_password = generator.check_passwd(2, "yourpasswort") # Checks the password
-print(hashed_password)
-```
-
-**Check if a password contains numbers and letters.**
-
-```python
-from passwd_generator.functions import passwd
-
-
-generator = passwd() # Define the passwd generator
-hashed_password = generator.check_passwd(3, "yourpasswort") # Checks the password
-print(hashed_password)
-```
-
-> Note that the check returns true if the password contains the requirements and false if ot.
